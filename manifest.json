@@ -1,0 +1,16 @@
+{
+  "name": "allkpop video fixer",
+  "version": "1.0",
+  "manifest_version": 1,
+  "description": "Turns the video player back to YouTube.",
+  "browser_action": {
+    "default_icon": "allkpop.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://www.allkpop.com/*"],
+      "js": ["jquery-1.7.2.min.js","convert.js"]
+    }
+  ],
+  "run_at": "document_end"
+}
